@@ -15,7 +15,7 @@ print("Введите количество элементов в массиве:
 quantity = int(input())
 
 for i in range(quantity):
-    print("введите число: ", end="")
+    print("Введите число: ", end="")
     list1.insert(i, int(input()))
 print(list1)
 
@@ -24,11 +24,9 @@ num = int(input())
 
 count = 0
 
-
 for s in list1:
     if s == num:
         count += 1
 
 if count > 0:
     print(f"Число {num} повторяется {count} раз(а)")
-
