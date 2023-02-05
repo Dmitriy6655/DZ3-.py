@@ -32,7 +32,9 @@ if X <= 0:
     print(list1[0])
     exit()
 
-flag = False
+if X == 1:
+    print(list1[1])
+    exit()
 
 for i in list1:
     if i == X:
