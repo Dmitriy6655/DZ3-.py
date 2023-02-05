@@ -22,7 +22,19 @@ while count < num:
 print(list1)
 
 print("Введите число: ", end="")
-N = int(input())
+X = int(input())
 
-if N > list1[-1]:
+if X > list1[-1]:
     print(list1[-1])
+    exit()
+
+if X <= 0:
+    print(list1[0])
+    exit()
+
+flag = False
+
+for i in list1:
+    if i == X:
+        print(i - 1)
+        exit()
